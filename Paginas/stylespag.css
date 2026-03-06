@@ -1,0 +1,13 @@
+.titlesh2{
+        font-family: "Lugrasimo",sans-serif , cursive;
+        font-weight: 100;
+        font-style: normal;
+        color: darkslateblue;
+}
+p{
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+}
+.glifo{
+        img {border-radius: 8px;}
+}

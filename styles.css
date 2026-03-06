@@ -1,14 +1,15 @@
 .title{color: blue;
         background-color: blanchedalmond; 
         display: inline-block;
-        font-size: large;
-        font-family: cursive      
+        font-family: "Shrikhand", serif;
+        font-weight: 400;
+        font-style: normal;      
 }
-.site_Header{background-color: blue;
-        
+.site_Header{
+        background-color: blue;
 }
-.p{
-        font-size: 12px;
+p{
+        font-size: 16px;
         font-family: 'Times New Roman', Times, serif;
 }
 .menu-principal{
@@ -44,6 +45,4 @@ a:active {
         background-color: chocolate;
         display: inline-block;
 }
-.glifo{
-        img {border-radius: 8px;}
-}
+
