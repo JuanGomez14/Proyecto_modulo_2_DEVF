@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santa Maria Suchixtlan</title>
+    <title>Santa Maria Suchixtlán</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
-     <header class="site_header">
-        <div class="title">
-            <h1>Santa Maria Suchixtlan</h1>
-        </div>
+    <header class="hero">
+    <div class="hero-content">
+        <h1>Santa María Suchixtlán</h1>
+        <p>Pueblecito pintoresco Suchixtlán lugar de flores, Oaxaca</p>
+    </div>
     </header>
     <!-- Informacion general e introductoria -->
-    <div class="general">
-        <p>
-            La comunidad de Santa Maria Suchixtlán se localiza en el estado de Oaxaca. 
-            Especificamente en la region mixteca y pertenece al municipio de San Ándres Sinaxtla y cuenta con el reconocimiento de pueblo originario de México.
-            Esta pequeña comunidad tiene una altura de 2100 metros sobre el nivel del mar. Ubicada enmedio de un valle, lo cual permite tener amplias y varias campos para la agricultura.
-            De acuerdo al último censo poblacional realizado por el INEGI, esta comunidad cuenta con 111 habitantes. 
-            Te invitamos a descubrir más acerca de esta pequeña e increible comunidad, en donde podras encontrar como se organiza, su hitoria y sus principales festividades
-        </p>
-    </div>
-
-    <!-- Menu de navegacion principal -->
+    <section class="general">
+        <h2>Acerca de Santa María Suchixtlán</h2>
+        <div class="general-contenido">
+            <div class="general-img">
+            <img src="./imagenes/pano.jpeg" 
+            alt="Santa Maria Suchixtlan tradicion">
+        </div>
+        <div class="general-texto">
+            <p>
+                La comunidad de Santa María Suchixtlán se encuentra ubicada en el estado de Oaxaca, en la región Mixteca y pertenece al municipio de San Andrés Sinaxtla. El asentamiento urbano se localiza sobre el valle de Yanhuitlán, en una planicie que forma un tapiz de colores debido a sus terrenos de cultivo, va cambiando de tonalidades durante todo el año, desde el verde producido por las lluvias en verano, el amarillo de las flores en los días de Todos Santos o el color paja al final del año producido por los cultivos cuando han madurado. 
+                De acuerdo con el último censo poblacional realizado por el INEGI, esta comunidad cuenta con 111 habitantes. Además cuenta con otros núcleos poblacionales dentro de su territorio conformados por algunas familias los cuales son: Tapia con 8 habitantes que viven en una vivienda, Nahum Bautista con un habitante y una vivienda y la Reforma con 18 habitantes y 6 viviendas, todo el conjunto de núcleos poblacionales son aquellos que decidieron no emigrar que se quedaron y viven en la comunidad. En su mayoría son personas que su principal actividad es el trabajo del campo, además de que son los que sostienen y dan vida este pueblo, los que son nombrados autoridades, con una rotación muy frecuente e inclusive con cargos simultáneos, los que conservan las tradiciones y costumbres heredadas por los antepasados y los que dan la cara para representar a la comunidad.
+                A todos aquellos suchixtecos que han emigrado y conforman las diferente mesas directivas, así como aquellos paisanos que se encuentre lejos del pueblecito pintoresco o cualquier otro visitante que quiera conocer mas acerca de esta bella comunidad los invitamos a explorar y descubrir la magia de Suchixtlán.
+            </p>
+        </div>
+        </div>
+    </section>
+<!-- Menu de navegacion principal -->
     <div class="menu-principal">
         <nav>
         <ul>
@@ -40,15 +47,15 @@
     </div>
 <!-- Ubicacion y foto -->
     <div class="ubicacion">
-        <!--<iframe src="https://www.google.com/search?q=mapa%20de%2069667%20Santa%20Mar%C3%ADa%20Suchixtl%C3%A1n%2C%20Oax.&shem=epsd1&shndl=40&source=sh%2Fx%2Floc%2Fgeo%2Fm1%2F1&kgs=ee846154e2cde205" target="ubicacion de google maps"
-         title="Santa María Suchixtlán">
-        </iframe>-->
-        <div class="img-ubi">
-            <img src="./imagenes/ubicacion.jpeg" alt="Santa Maria Suchixtlan y el valle">
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1902.5814546720999!2d-97.33140166126697!3d17.499735103925566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c6423864a93335%3A0xd122692798611ec7!2s69667%20Santa%20Mar%C3%ADa%20Suchixtl%C3%A1n%2C%20Oax.!5e0!3m2!1ses!2smx!4v1773195224620!5m2!1ses!2smx" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
         </div>
-        <a href="https://www.google.com/search?q=mapa%20de%2069667%20Santa%20Mar%C3%ADa%20Suchixtl%C3%A1n%2C%20Oax.&shem=epsd1&shndl=40&source=sh%2Fx%2Floc%2Fgeo%2Fm1%2F1&kgs=ee846154e2cde205" target="ubicacion de google maps">
-                Santa María Suchixtlán, San Ándes Sinaxtla, Nochixtlán, Oaxaca
-            </a>
+        <div class="geografia">
+            <p>
+                Esta pequeña comunidad tiene una altitud promedio de 2112 metros sobre el nivel del mar. Ubicada en medio de un valle, como ya se menciono antes, colindando al Norte con Santo Domingo Yanhitlán; al Sur con Santiago Tillo; al Este con San Mateo Yucucui; al Oeste con Santo Domingo Yanhuitlán. Además cuenta con un área de 10.44 Km^2 y una longitud perimetral de 13.66 Km.
+                El clima predominate en la comunidad se identifica como templado con lluvias en verano e invierno seco.
+            </p>
+        </div>
     </div>
  
 <!-- Cuestionario de posibles mejoras -->    
@@ -73,7 +80,9 @@
 
     <div class="footer">
         <footer>
-        <p>Proyecto académico del segundo modulo DEVF - 2026 y primer borrador de la pagina comunitaria.</p>
+        <p>Proyecto académico del segundo modulo DEVF - 2026 y primer borrador de la pagina comunitaria.
+            Se hace uso de cookies para mejorar la experiencia.
+        </p>
     </footer>
     </div>
 
