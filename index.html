@@ -16,6 +16,19 @@
         <p>Pueblecito pintoresco Suchixtlán lugar de flores, Oaxaca</p>
     </div>
     </header>
+
+    <!-- Menu de navegacion principal -->
+    <nav class="menu-principal">
+    <ul class="menu-lista">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="./Paginas/agencia_municipal.html">Agencia Municipal</a></li>
+        <li><a href="./Paginas/comisariado_bc.html">Comisariado</a></li>
+        <li><a href="./Paginas/historia.html">Historia</a></li>
+        <li><a href="./Paginas/fiestas_patronales.html">Fiestas Patronales</a></li>
+        <li><a href="./Paginas/dia_dia_anecdotas.html">Relatos</a></li>
+    </ul>
+    </nav>
+
     <!-- Informacion general e introductoria -->
     <section class="general">
         <h2>Acerca de Santa María Suchixtlán</h2>
@@ -33,58 +46,55 @@
         </div>
         </div>
     </section>
-<!-- Menu de navegacion principal -->
-    <div class="menu-principal">
-        <nav>
-        <ul>
-            <li><a href="./Paginas/agencia_municipal.html">Agencia Municipal</a></li>
-            <li><a href="./Paginas/comisariado_bc.html">Comisariado de Bienes Comunales</a></li>
-             <li><a href="./Paginas/historia.html">Historia</a></li>
-            <li><a href="./Paginas/fiestas_patronales.html">Fiestas patronales</a></li>
-            <li><a href="./Paginas/dia_dia_anecdotas.html">Historias del día a día</a></li>
-        </ul>
-    </nav>
-    </div>
+
 <!-- Ubicacion y foto -->
-    <div class="ubicacion">
+    <section class="ubicacion">
+        <h2>Ubicación geográfica</h2>
         <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1902.5814546720999!2d-97.33140166126697!3d17.499735103925566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c6423864a93335%3A0xd122692798611ec7!2s69667%20Santa%20Mar%C3%ADa%20Suchixtl%C3%A1n%2C%20Oax.!5e0!3m2!1ses!2smx!4v1773195224620!5m2!1ses!2smx" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1902.5814546720999!2d-97.33140166126697!3d17.499735103925566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c6423864a93335%3A0xd122692798611ec7!2s69667%20Santa%20Mar%C3%ADa%20Suchixtl%C3%A1n%2C%20Oax.!5e0!3m2!1ses!2smx!4v1773195224620!5m2!1ses!2smx"  
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe> 
         </div>
         <div class="geografia">
             <p>
-                Esta pequeña comunidad tiene una altitud promedio de 2112 metros sobre el nivel del mar. Ubicada en medio de un valle, como ya se menciono antes, colindando al Norte con Santo Domingo Yanhitlán; al Sur con Santiago Tillo; al Este con San Mateo Yucucui; al Oeste con Santo Domingo Yanhuitlán. Además cuenta con un área de 10.44 Km^2 y una longitud perimetral de 13.66 Km.
-                El clima predominate en la comunidad se identifica como templado con lluvias en verano e invierno seco.
+            Esta pequeña comunidad tiene una altitud promedio de 2112 metros sobre el nivel del mar. Ubicada en medio de un valle, como ya se menciono antes, 
+            colindando al Norte con Santo Domingo Yanhitlán; al Sur con Santiago Tillo; al Este con San Mateo Yucucui; al Oeste con Santo Domingo Yanhuitlán. 
+            Además cuenta con un área de 10.44 Km<sup>2</sup> y una longitud perimetral de 13.66 Km.
+            El clima predominate en la comunidad se identifica como templado con lluvias en verano e invierno seco.
             </p>
         </div>
-    </div>
- 
+    </section>
+
 <!-- Cuestionario de posibles mejoras -->    
-<div class="cuestionario">
-    <main>
+<section class="cuestionario">
+    <h2>Envíanos tus dudas o sugerencias</h2>
+        <form class="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Escribe tu nombre">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+</section>
 
-        <section>
-            <h2>Dudas y sugerencias de mejora</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <input type="text" id="mensaje" name="mensaje">
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-    </main>
-</div>
-
-    <div class="footer">
-        <footer>
-        <p>Proyecto académico del segundo modulo DEVF - 2026 y primer borrador de la pagina comunitaria.
-            Se hace uso de cookies para mejorar la experiencia.
+<!-- Footer y derechos --> 
+<footer class="footer">
+    <div class="footer-contenido">
+        <h3>Santa María Suchixtlán</h3>
+        <p>
+        Comunidad indigena, Nochixtlan, Oaxaca.
         </p>
-    </footer>
+        <p>
+        Proyecto académico del segundo módulo DEVF – 2026.
+        </p>
+        <p class="copyright">
+        © 2026 Santa María Suchixtlán
+        </p>
     </div>
-
+</footer>
 </body>
 </html>
