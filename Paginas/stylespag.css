@@ -1,42 +1,1063 @@
-/* Hoja de estilos de las paginas secundarias de navegacion */
+/*                          HOJA DE ESTILOS DE LAS PAGINAS SECUNDARIAS */
+
+/*-------------------------------------------------------------------------------------------------------
+                                          PARAMETROS GLOBALES
+---------------------------------------------------------------------------------------------------------*/
 body{
-        background-color: antiquewhite;
+        background-color: rgb(235, 206, 168);
 }
-h1{
-        font-family: "Lugrasimo",sans-serif , cursive;
-        font-weight: 100;
-        font-style: normal;
-        color: rgb(155, 35, 35);
-        display: flex;
-        justify-content: center; 
-}
-/*h2{
-    font-family: "Lugrasimo",sans-serif , cursive;
-        font-weight: 200;
-        font-style: normal;
-        color: rgb(155, 35, 35); 
-        display: flex;
-        justify-content: center;    
-}*/
-/*p{
-        font-size: 16px;
+p{
         font-family: 'Times New Roman', Times, serif;
-}*/
-.que-es{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: start;
+        font-size: 120%;
 }
-.que-es div h2{
-        font-family: "Lugrasimo",sans-serif , cursive;
-        font-weight: 200;
-        font-style: normal;
-        color: rgb(155, 35, 35); 
-        justify-content: center; 
+
+/* BARRA DE NAVEGACION*/
+.menu-principal{
+    background-color: rgb(129,107,79);
+    padding: 10px 0;
 }
-.que-es div p{
-        font-size: 16px;
-        font-family: 'Times New Roman', Times, serif;
-        justify-content: center;
+
+.menu-lista{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin:0;
+    padding:0;
 }
+
+.menu-lista a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:500;
+    padding:8px 12px;
+    transition:0.3s;
+}
+
+.menu-lista a:hover{
+    background-color:brown;
+    border-radius:5px;
+}
+
+.menu-principal{
+    position: sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* FOOTER*/
+.footer{
+    background-color: rgb(129,107,79);
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.footer-contenido{
+    max-width:800px;
+    margin:auto;
+}
+
+.footer h3{
+    margin-bottom:10px;
+}
+
+.footer p{
+    margin:5px 0;
+    font-size:16px;
+}
+
+.copyright{
+    margin-top:15px;
+    font-size:14px;
+    opacity:0.8;
+}
+/*-------------------------------------------------------------------------------------------------------
+                                          Agencia municipal
+---------------------------------------------------------------------------------------------------------*/
+/*Titulo de la pagina*/
+.hero-A{
+    height: 60vh;
+    background-image: url("../imagenes/agencia municipal/agencia.jpeg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content-A{
+    background: rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:10px;
+    color:rgb(221, 177, 215);
+    text-align:center;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+/* ¿QUE ES?*/
+.que-es-A h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.que-es-A-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.que-es-A-img{
+    flex:1;
+}
+
+.que-es-A-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.que-es-A-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}s
+
+/* Como se conforma*/
+
+.conformacion-C h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.conformacion-A-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.conformacion-A-img{
+    flex:1;
+}
+
+.conformacion-A-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.conformacion-A-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* servicios*/
+.servicios-A h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.servicios-A-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.servicios-A-img{
+    flex:1;
+}
+
+.servicios-A-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.servicios-A-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* avisos*/
+.avisos-A h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.avisos-A-contenido{
+    display:flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.avisos-A-img{
+    flex:1;
+}
+
+.avisos-A-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.avisos-A-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* mapa*/
+.croquis-A{
+    padding:60px 10%;
+}
+
+.croquis-A h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.mapa{
+    flex:1;
+}
+
+.mapa iframe{
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:10px;
+}
+
+.croquis-A-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* CUESTIONARIO */
+.cuestionario-A{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.formulario-A{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario-A label{
+    text-align:left;
+    font-weight:bold;
+}
+
+.formulario-A input,
+.formulario-A textarea{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.formulario-A option,
+.formulario-A select{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.formulario-A button{
+    padding:12px;
+    background-color:brown;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.formulario-A button:hover{
+    background-color:#7a2f2f;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                          COMISARIADO
+---------------------------------------------------------------------------------------------------------*/
+/*Titulo de la pagina*/
+.hero-C{
+    height: 60vh;
+    background-image: url("../imagenes/comisariado/comisariado.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content-C{
+    background: rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:10px;
+    color:rgb(221, 177, 215);
+    text-align:center;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+/* ¿QUE ES?*/
+.que-es-C h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.que-es-C-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.que-es-C-img{
+    flex:1;
+}
+
+.que-es-C-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.que-es-C-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* Como se conforma*/
+.conformacion-C h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.conformacion-C-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.conformacion-C-img{
+    flex:1;
+}
+
+.conformacion-C-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.conformacion-C-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* servicios*/
+.servicios-C h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.servicios-C-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.servicios-C-img{
+    flex:1;
+}
+
+.servicios-C-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.servicios-C-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* avisos*/
+.avisos-C h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.avisos-C-contenido{
+    display:flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.avisos-C-img{
+    flex:1;
+}
+
+.avisos-C-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.avisos-C-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* mapa*/
+.croquis-C h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.croquis-C-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.croquis-C-img{
+    flex:1;
+}
+
+.croquis-C-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.croquis-C-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* CUESTIONARIO */
+.cuestionario-C{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.formulario-C{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario-C label{
+    text-align:left;
+    font-weight:bold;
+}
+
+.formulario-C input,
+.formulario-C textarea{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.formulario-C option,
+.formulario-C select{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.formulario-C button{
+    padding:12px;
+    background-color:brown;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.formulario-C button:hover{
+    background-color:#7a2f2f;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                          HISTORIA
+---------------------------------------------------------------------------------------------------------*/
+/*Titulo de la pagina*/
+.hero-H{
+    height: 60vh;
+    background-image: url("../imagenes/historia/amanecer.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content-H{
+    background: rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:10px;
+    color:rgb(221, 177, 215);
+    text-align:center;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+/* Prehispanica*/
+.Prehispanica h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.Prehispanica-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.Prehispanica-img{
+    flex:1;
+}
+
+.Prehispanica-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.Prehispanica-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* colonial*/
+.colonial h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.colonial-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.colonial-img{
+    flex:1;
+}
+
+.colonial-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.colonial-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* independencia*/
+.independencia h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.independencia-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.independencia-img{
+    flex:1;
+}
+
+.independencia-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.independencia-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* revolucion*/
+.revolucion h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.revolucion-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.revolucion-img{
+    flex:1;
+}
+
+.revolucion-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.revolucion-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* actual*/
+.actual h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.actual-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.actual-img{
+    flex:1;
+}
+
+.actual-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.actual-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+/*-------------------------------------------------------------------------------------------------------
+                                          FIESTAS
+---------------------------------------------------------------------------------------------------------*/
+/*Titulo de la pagina*/
+.hero-F{
+    height: 60vh;
+    background-image: url("../imagenes/historia/amanecer.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content-F{
+    background: rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:10px;
+    color:rgb(221, 177, 215);
+    text-align:center;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+/* fiesta de enero*/
+.enero h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.enero-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.enero-img{
+    flex:1;
+}
+
+.enero-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.enero-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* fiesta de diciembre*/
+.diciembre h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.diciembre-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.diciembre-img{
+    flex:1;
+}
+
+.diciembre-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.diciembre-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* septiembre*/
+.septiembre h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.septiembre-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.septiembre-img{
+    flex:1;
+}
+
+.septiembre-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.septiembre-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* muertos*/
+.muertos h2{
+        align-self: center;
+        justify-self: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: brown;
+        font-size: 200%;
+}
+
+.muertos-contenido{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+}
+
+.muertos-img{
+    flex:1;
+}
+
+.muertos-img img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.muertos-texto{
+    flex:1;
+    font-size:18px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                          RELATOS
+---------------------------------------------------------------------------------------------------------*/
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Titulo de la pagina*/
+.hero-R{
+    height: 60vh;
+    background-image: url("../imagenes/relatos/canastas.jpeg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content-R{
+    background: rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:10px;
+    color:rgb(221, 177, 215);
+    text-align:center;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+/* FILTROS */
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.filtros button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filtros button:hover {
+  background-color: #666;
+}
+
+/* GALERÍA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+
+/* TARJETAS */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* IMÁGENES */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* POEMAS */
+.poema {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* AUDIO */
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+

@@ -14,9 +14,9 @@ p{
                                           CLASES
 ---------------------------------------------------------------------------------------------------------*/
 /*Titulo de la pagina*/
-.hero{
+/*.hero{
     height: 60vh;
-    background-image: url("./imagenes/ubicacion.jpeg");
+    background-image: url("../imagenes/pagina principal/ubicacion.jpeg");
     background-size: cover;
     background-position: center;
     display:flex;
@@ -33,10 +33,53 @@ p{
     font-family: "Shrikhand", serif;
     font-weight: 400;
     font-size: 200%;
+}*/
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.hero-content {
+    position: relative;
+    color:rgb(221, 177, 215);
+    text-align: center;
+    padding: 20px;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5); /* capa oscura */
+}
+
+.hero {
+    height: 100vh; /* ocupa toda la pantalla */
+    background-image: url('./imagenes/pagina principal/pano.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
 /* BARRA DE NAVEGACION*/
-.menu-principal{
+/*.menu-principal{
     background-color: rgb(129,107,79);
     padding: 10px 0;
 }
@@ -68,18 +111,61 @@ p{
     position: sticky;
     top:0;
     z-index:1000;
+}*/
+.menu-principal {
+    background: rgb(129,107,79);;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* INFORMACION GENERAL*/
-/*.general{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:40px;
-    padding:60px 10%;
-}*/
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: relative;
+}
 
-.general h2{
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* MENÚ DESKTOP */
+.menu-lista {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-lista a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.menu-lista a:hover {
+    color: #f4c542;
+}
+
+/* CHECKBOX OCULTO */
+#menu-toggle {
+    display: none;
+}
+
+/* ICONO HAMBURGUESA */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* INFORMACION GENERAL*/
+
+/*.general h2{
         align-self: center;
         justify-self: center;
         font-family: 'Courier New', Courier, monospace;
@@ -112,10 +198,39 @@ p{
     font-size:18px;
     line-height:1.6;
     text-align:justify;
+}*/
+
+.general {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+.general h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+.general-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.general-img img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.general-texto {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 /* UBICACION*/
-.ubicacion{
+/*.ubicacion{
     padding:60px 10%;
 }
 
@@ -139,18 +254,56 @@ p{
     height:350px;
     border:0;
     border-radius:10px;
-}
+}/*
 
 /* Geografia*/
-.geografia{
+/*.geografia{
     flex:1;
     font-size:18px;
     line-height:1.6;
     text-align:justify;
+}*/
+
+.ubicacion {
+    padding: 60px 0;
+}
+
+.ubicacion h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+.ubicacion-contenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.mapa {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.geografia {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 /* CUESTIONARIO */
-.cuestionario{
+/*.cuestionario{
     padding:60px 10%;
     text-align:center;
 }
@@ -188,9 +341,64 @@ p{
 
 .formulario button:hover{
     background-color:#7a2f2f;
+}*/
+.cuestionario {
+    padding: 60px 0;
+    background: #f4f4f4;
 }
+
+.cuestionario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #f4c542;
+    outline: none;
+    box-shadow: 0 0 5px rgba(244,197,66,0.5);
+}
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #222;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formulario button:hover {
+    background: #f4c542;
+    color: #222;
+}
+
 /* FOOTER*/
-.footer{
+/*.footer{
     background-color: rgb(129,107,79);
     color:white;
     padding:40px 20px;
@@ -216,4 +424,184 @@ p{
     font-size:14px;
     opacity:0.8;
 }
+*/
 
+.footer {
+    background: #222;
+    color: white;
+    padding-top: 40px;
+}
+.footer-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.footer-col h3,
+.footer-col h4 {
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul a:hover {
+    color: #f4c542;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    font-size: 0.85rem;
+}
+/*-------------------------------------------------------------------------------------------------------
+                                          ESTILO RESPONSIVO
+---------------------------------------------------------------------------------------------------------*/
+/*Titulo de la pagina*/
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+        padding: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+/* BARRA DE NAVEGACION*/
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-lista {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgb(129,107,79);;
+
+        flex-direction: column;
+        align-items: center;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    /* Cuando el checkbox está activo */
+    #menu-toggle:checked ~ .menu-lista {
+        max-height: 500px;
+    }
+
+    .menu-lista li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid #333;
+    }
+
+    .menu-lista a {
+        display: block;
+        width: 100%;
+    }
+}
+/*informacion general*/
+@media (max-width: 768px) {
+    .general-contenido {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .general h2 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 480px) {
+    .general {
+        padding: 40px 15px;
+    }
+
+    .general-texto {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 768px) {
+    .general-img {
+        order: -1;
+    }
+}
+/*ubicacion*/
+@media (max-width: 768px) {
+    .ubicacion-contenido {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+@media (max-width: 480px) {
+    .ubicacion {
+        padding: 40px 15px;
+    }
+
+    .geografia {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 768px) {
+    .geografia {
+        order: -1;
+    }
+}
+/*cuestionario*/
+@media (max-width: 480px) {
+    .formulario {
+        padding: 20px;
+    }
+
+    .cuestionario {
+        padding: 40px 15px;
+    }
+}
+/*footer*/
+@media (max-width: 768px) {
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

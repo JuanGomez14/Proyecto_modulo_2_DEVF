@@ -1,17 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylespag.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatos</title>
+  <link rel="stylesheet" href="stylespag.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <section>
-            <h1>Historias del dia a dia</h1>
-    </section>
+<!-- Menu de navegacion principal -->
+    <nav class="menu-principal">
+    <ul class="menu-lista">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/agencia_municipal.html">Agencia Municipal</a></li>
+        <li><a href="../Paginas/comisariado_bc.html">Comisariado</a></li>
+        <li><a href="../Paginas/historia.html">Historia</a></li>
+        <li><a href="../Paginas/fiestas_patronales.html">Fiestas Patronales</a></li>
+        <li><a href="../Paginas/dia_dia_anecdotas.html">Relatos</a></li>
+    </ul>
+    </nav>
+
+  <!-- HEADER -->
+  <header class="hero-R">
+    <div class="hero-content-R">
+        <h1>Galería Cultural de Santa María Suchixtlán</h1>
+        <p>Fotografías, poemas y música tradicional</p>
+    </div>
+    </header>
+
+  <!-- FILTROS (visual por ahora) -->
+  <nav class="filtros">
+    <button>Todos</button>
+    <button>Fotos</button>
+    <button>Poemas</button>
+    <button>Canciones</button>
+  </nav>
+
+  <!-- GALERÍA -->
+  <main class="galeria">
+
+    <!-- FOTO -->
+    <article class="card">
+      <img src="../imagenes/relatos/equipo_choyu.jpg" alt="equipo choyu">
+      <h3>Primer equipo de futbol</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/relatos/equipochoyu2.jpg" alt="equipo choyu 2">
+      <h3>Segundo equipo de futbol</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/fiestas/10 mayo.jpg" alt="10 de mayo">
+      <h3>Festival del 10 de mayo</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/fiestas/15 mayo.jpg" alt="15 de mayo">
+      <h3>Celebracion San isidro Labrador</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/fiestas/15 mayo1.jpg" alt="15 de mayo1">
+      <h3>Celebracion San isidro Labrador</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/fiestas/15 mayo2.jpg" alt="15 de mayo2">
+      <h3>Celebracion San isidro Labrador</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/fiestas/15 mayo3.jpg" alt="15 de mayo3">
+      <h3>Celebracion San isidro Labrador</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/fiestas/15 enere1.jpg" alt="15 de enero">
+      <h3>Bajada del Dulce Nombre de Jesus</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/fiestas/15 enero.jpg" alt="15 de enero">
+      <h3>Bajada del Dulce Nombre de Jesus</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/fiestas/15 enero2.jpg" alt="15 de enero">
+      <h3>Bajada del Dulce Nombre de Jesus</h3>
+    </article>
+    <article class="card">
+      <img src="../imagenes/relatos/adultos.jpeg" alt="adultos">
+      <h3>Ejercicios adultos mayores</h3>
+    </article>
+
+    <!-- POEMA -->
+    <article class="card">
+      <h3>Canto Dulce Nombre</h3>
+      <p class="poema">
+        El Dulce Nombre es mi Señor<br>
+        y yo le rezo con gran fervor,<br>
+        este domingo le cantaré<br>
+        porque este día más lo amaré.<br>
+        ...
+      </p>
+      <a href="../imagenes/relatos/Poemas/Canto_Dulce_Nombre.pdf" target="_blank">Leer completo</a>
+    </article>
+
+    <!-- CANCIÓN -->
+    <article class="card">
+      <h3>Pueblecito pintoresco</h3>
+      <audio controls>
+        <source src="../imagenes/relatos/Canciones/Pueblecito pintoresco.mp3.mpeg" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+        <h3>Santa María Suchixtlán</h3>
+        <p>
+        Comunidad indigena, Nochixtlan, Oaxaca.
+        </p>
+        <p>
+        Proyecto académico del segundo módulo DEVF – 2026.
+        </p>
+        <p class="copyright">
+        © 2026 Santa María Suchixtlán
+        </p>
+    </div>
+</footer>
 </body>
 </html>
